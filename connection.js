@@ -8,6 +8,7 @@ const uri = 'mongodb://localhost:27017/Store';
 const db = mongoose.connection;
 
 mongoose.connect(uri, {
+    useCreateIndex: true,
     useNewUrlParser: true,
     useUnifiedTopology: true
 
